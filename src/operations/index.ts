@@ -6,6 +6,7 @@ import { ColumnMath } from './table/columnMath';
 import { SortRows } from './table/sortRows';
 import { LinearRegression } from './analysis/LinearRegression';
 import { ConstantMath } from './math/ConstantMath';
+// import { MyOperation} from './test/myOP';
 
 export const OPERATION_REGISTRY: Record<string, OperationDefinition> = {
   [FromCSV.id]: FromCSV,
@@ -14,7 +15,11 @@ export const OPERATION_REGISTRY: Record<string, OperationDefinition> = {
   [ColumnMath.id]: ColumnMath,
   [SortRows.id]: SortRows,
   [ConstantMath.id]: ConstantMath,
-  [LinearRegression.id]: LinearRegression
+  [LinearRegression.id]: LinearRegression,
+
+  // A place to add new operations for testing
+
+  // [MyOperation.id]: MyOperation              
 };
 
 export const getOperationsByCategory = () => {
