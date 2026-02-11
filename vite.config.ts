@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './', // Use relative paths for assets to work on GH Pages without custom domain
+  base: './tableChef/', // Use relative paths for assets to work on GH Pages without custom domain
 })
